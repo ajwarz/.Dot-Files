@@ -26,7 +26,6 @@ set splitright                        " Open new splits to the right
 set splitbelow                        " Open new splits to the bottom
 set lazyredraw                        " Reduce the redraw frequency
 set ttyfast                           " Send more characters in fast terminals
-"set nowrap                            " Don't wrap long lines
 set listchars=extends:→               " Show arrow if line continues rightwards
 set listchars+=precedes:←             " Show arrow if line continues leftwards
 set nobackup nowritebackup noswapfile " Turn off backup files
@@ -39,6 +38,7 @@ set incsearch                         " Show search results as you type
 set timeoutlen=1000 ttimeoutlen=0     " Remove timeout when hitting escape
 set showcmd                           " Show size of visual selection
 
+let g:better_whitespace_ctermcolor='black'
 let g:better_whitespace_enabled=1     " Removes trailing whitespace highlights
 let g:strip_whitespace_on_save=1      " Deletes trailing whitespace on save
 let g:better_whitespace_skip_empty_lines=1 " Ignores empty lines
@@ -60,7 +60,14 @@ set wildignore+=*/node_modules/
 " Interface
 "-------------------------------------------------------------------------------
 
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{wordcount()[\"words\"]} " Status line
+" Light line configuration
+let g:lightline = {
+  \ 'colorscheme': 'solarized',
+  \ 'active': {
+    \ 'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+    \ 'right': [['lineinfo'], ['percent']]
+  \ }
+\ }
 set scrolloff=5           " Leave 5 lines of buffer when scrolling
 set sidescrolloff=10      " Leave 10 characters of horizontal buffer when scrolling
 set number relativenumber " Automatically change relative lines to absolue in insert mode

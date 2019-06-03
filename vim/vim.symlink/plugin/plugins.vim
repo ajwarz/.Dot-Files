@@ -1,31 +1,31 @@
 call plug#begin('~/.vim/plugged')
 
 " Addons
+Plug 'terryma/vim-multiple-cursors'     " Multiple cursors with Ctrln, Ctrlx match
 Plug 'scrooloose/nerdtree'              " Directory GUI display with Ctrl-n
 Plug 'yegappan/mru'                     " Most recently used files :MRU
 Plug 'airblade/vim-gitgutter'           " Display Git changes
 Plug 'ervandew/supertab'                " Tab completion
-Plug 'tpope/vim-rhubarb'                "
-Plug 'tpope/vim-repeat'                 "
-Plug 'tpope/vim-bundler'                "
-Plug 'tpope/vim-endwise'                "
-Plug 'tpope/vim-surround'               "
-Plug 'tmhedberg/matchit'                "
-Plug 'kana/vim-textobj-user'            "
-Plug 'nelstrom/vim-textobj-rubyblock'   "
-Plug 'vim-scripts/tComment'             "
-Plug 'jremmen/vim-ripgrep'              "
-Plug 'blarghmatey/split-expander'       "
-Plug 'farmergreg/vim-lastplace'         "
-Plug 'machakann/vim-swap'               "
+Plug 'tpope/vim-repeat'                 " Plugin support for repeat .
+Plug 'tpope/vim-bundler'                " Ruby Gem bundler
+Plug 'tpope/vim-endwise'                " Add matching syntix i.e. if - end
+Plug 'tpope/vim-surround'               " Change surrounding of word with cs
+Plug 'tmhedberg/matchit'                " Better % matching
+Plug 'kana/vim-textobj-user'            " Create simple text objects
+Plug 'nelstrom/vim-textobj-rubyblock'   " Text object to select Ruby blocks
+Plug 'vim-scripts/tComment'             " File-type sensible comments
+Plug 'jremmen/vim-ripgrep'              " :Rg <string|pattern>
+Plug 'blarghmatey/split-expander'       " Expand split to longest line <leader>M
+Plug 'farmergreg/vim-lastplace'         " Reopen files at last place
+Plug 'machakann/vim-swap'               " f(a,b) to f(b,a) with Ctrls,Ctrl>,Ctrl<
 
 " Tmux integration
-Plug 'benmills/vimux'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'                   " Tmux splits :vsplit :split
+Plug 'christoomey/vim-tmux-navigator'   " Navigate panes Ctrl{hjkl}
 
 " File system navigation
-Plug 'tpope/vim-eunuch'
-Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-eunuch'                 " Bash commands with :{command}
+Plug 'kien/ctrlp.vim'                   " Fuzzy file finder
 
 " Syntax highlighting
 Plug 'vim-ruby/vim-ruby'
@@ -49,14 +49,16 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/goyo.vim'
 
 " Git support
-Plug 'tpope/vim-fugitive', { 'commit': '444ba9fda5d05aa14c7e8664fa4a66a59c62a550' }
+Plug 'tpope/vim-fugitive'               " :Gread :Gdiff :Gstatus :Gcommit :Ggrep
+Plug 'tpope/vim-rhubarb'                " :Gbrowse to open github URLs
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
 Plug 'icymind/NeoSolarized'
+Plug 'itchyny/lightline.vim'            " Better status line
 
 " Testing
-Plug 'janko-m/vim-test'
+Plug 'janko-m/vim-test'                 " :TestSuite if test file
 
 " Display hex colors
 Plug 'chrisbra/Colorizer'
