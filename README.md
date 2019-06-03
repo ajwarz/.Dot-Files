@@ -1,7 +1,7 @@
-![dotfiles](https://raw.githubusercontent.com/mscoutermarsh/dotfiles/master/autobot.jpg)
-
-dotfiles
+DotFiles
 ===================
+This is my personal modification of dotfiles taken from @mscoutermarsh. The following is his readme: 
+
 ![screenshot](https://github.com/mscoutermarsh/dotfiles/blob/master/screenshot.png)
 (Here's what my setup looks like. Vim/Tmux)
 

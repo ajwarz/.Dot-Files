@@ -1,22 +1,23 @@
 call plug#begin('~/.vim/plugged')
 
 " Addons
-Plug 'scrooloose/nerdtree'
-Plug 'yegappan/mru'
-Plug 'airblade/vim-gitgutter'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-surround'
-Plug 'tmhedberg/matchit'
-Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'vim-scripts/tComment'
-Plug 'jremmen/vim-ripgrep'
-Plug 'blarghmatey/split-expander'
-Plug 'farmergreg/vim-lastplace'
+Plug 'scrooloose/nerdtree'              " Directory GUI display with Ctrl-n
+Plug 'yegappan/mru'                     " Most recently used files :MRU
+Plug 'airblade/vim-gitgutter'           " Display Git changes
+Plug 'ervandew/supertab'                " Tab completion
+Plug 'tpope/vim-rhubarb'                "
+Plug 'tpope/vim-repeat'                 "
+Plug 'tpope/vim-bundler'                "
+Plug 'tpope/vim-endwise'                "
+Plug 'tpope/vim-surround'               "
+Plug 'tmhedberg/matchit'                "
+Plug 'kana/vim-textobj-user'            "
+Plug 'nelstrom/vim-textobj-rubyblock'   "
+Plug 'vim-scripts/tComment'             "
+Plug 'jremmen/vim-ripgrep'              "
+Plug 'blarghmatey/split-expander'       "
+Plug 'farmergreg/vim-lastplace'         "
+Plug 'machakann/vim-swap'               "
 
 " Tmux integration
 Plug 'benmills/vimux'
@@ -35,9 +36,10 @@ Plug 'tpope/vim-markdown'
 Plug 'kchmck/vim-coffee-script'
 Plug 'groenewege/vim-less'
 Plug 'tpope/vim-haml'
-Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
 Plug 'jparise/vim-graphql'
 Plug 'zerowidth/vim-copy-as-rtf'
+Plug 'sheerun/vim-polyglot'
 
 " Syntax errors
 Plug 'w0rp/ale'
